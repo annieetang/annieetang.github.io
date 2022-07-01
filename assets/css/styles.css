@@ -191,7 +191,7 @@ body.light-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  /* max-width: 968px; */
+  max-width: 1920px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -245,7 +245,7 @@ body.light-theme{
 }
 
 .nav__logo{
-  color: --var(--first-color);
+  color: var(--first-color);
   font-weight: var(--font-medium);
   transition: .4s;
   margin-left: 1rem;
@@ -361,6 +361,8 @@ body.light-theme{
 
 .home__social, 
 .home__scroll{
+  margin-right: 1rem;
+  margin-left: 1rem;
   position: absolute;
 }
 
