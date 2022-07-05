@@ -870,23 +870,27 @@
                             <input type="text" name="_honey" style="display: none;">
 
                             <!-- Disable Captcha -->
-                            <input type="hidden" name="_captcha" value="false">
+                            <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                            <input type="hidden" name="_next" value="https://annieetang.github.io/success.html">
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Name</label>
+                                <label for="" class="contact__form-tag">Name*</label>
                                 <input type="text" placeholder="Insert your name" class="contact__form-input" name="name" id="name" required>
                             </div>
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
+                                <label for="" class="contact__form-tag">Email*</label>
                                 <input type="email" placeholder="Insert your email" class="contact__form-input" name="email" id = "email" required>
                             </div>
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="comments, questions" id="" cols="30" rows="10" placeholder="Write your project description here" class="contact__form-input"></textarea>
+                                <label for="" class="contact__form-tag">Comments/Questions</label>
+                                <textarea name="comments,&nbsp;questions" id="" cols="30" rows="10" placeholder="Write your comments and questions here" class="contact__form-par"></textarea>
                             </div>
 
+                            <br>
+                            <br>
                             <button class="button">Send Message</button>
                         </form>
                     </div>
