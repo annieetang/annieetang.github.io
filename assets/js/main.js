@@ -1,3 +1,10 @@
+/*
+    Annie's Personal Website
+
+    Annie Tang
+    June 2022 - present 
+ */
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
@@ -70,7 +77,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
           slidesPerView: 2,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 48,
         },
     },
