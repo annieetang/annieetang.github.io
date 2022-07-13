@@ -156,7 +156,7 @@ body.light-theme{
   color: var(--text-color);
 }
 
-.lighttheme .home__social-link{
+.light-theme .home__social-link{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
@@ -171,9 +171,16 @@ body.light-theme{
 .light-theme .button:hover, 
 .light-theme .active-work, 
 .light-theme .footer__title, 
-.light-teme .footer__link, 
+.light-theme .footer__link, 
 .light-theme .footer__copy{
   color: var(--title-color);
+}
+
+.light-theme .line,
+.light-theme .bead,
+.light-theme .line:before, 
+.light-theme .line:after{
+  background-color: var(--first-color);
 }
 
 .light-theme .about__box{
@@ -690,7 +697,7 @@ body.light-theme{
   margin-bottom: .25rem;
 }
 
-.work__button{
+/* .work__button{
   width: max-content;
   color: var(--first-color);
   font-size: var(--small-font-size);
@@ -701,7 +708,7 @@ body.light-theme{
 
 .work__button:hover .work__icon{
   transform: translateX(.25rem);
-}
+} */
 
 .work__icon{
   font-size: 1rem;
@@ -713,7 +720,6 @@ body.light-theme{
   background-color: var(--first-color);
   color: var(--body-color);
 }
-
 /*=============== TIMELINE / WORK EXPERIENCE ===============*/
 .timeline__title{
   font-size: var(--h2-font-size);
@@ -752,7 +758,7 @@ body.light-theme{
   width: 2px;
   top: -50px;
   /* bottom: -50px; */
-  background-color: white;
+  background-color: var(--first-color-alt);
   display: none;
 }
 
@@ -764,7 +770,7 @@ body.light-theme{
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--first-color-alt);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -798,7 +804,7 @@ body.light-theme{
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--first-color-alt);
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
@@ -1236,4 +1242,27 @@ body.light-theme{
     padding: .4rem;
     border-radius: .5rem;
   }
+}
+
+/*=============== FORM SUCCESS PAGE ===============*/
+.success__container{
+  row-gap: 2rem; 
+  padding-top: 1rem; 
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-items: center;
+}
+
+.success__content{
+  padding: 1.5rem; 
+  border-radius: 1.25rem; 
+  margin-bottom: 2rem; 
+  text-align: center;
+}
+
+.success__button{
+  margin-top: 5rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }

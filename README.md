@@ -1,8 +1,13 @@
-# annieetang.github.io
+# Annie Tang's website
 
-Wonderful sources:
+## annieetang.github.io
 
-* Bedimcode
+Welcome to my website and thanks for taking a look! It means a lot to me :)
+
+### Wonderful sources
+
+* Bedimcode (for Website template to start from)
+* Online web ustaad (for Timeline)
 * [Icons](https://boxicons.com/)
 * [Fonts](https://fonts.google.com/)
 * [Mixitup](https://www.kunkalabs.com/mixitup/)

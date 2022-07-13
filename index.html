@@ -52,7 +52,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">
+                            <a href="#projects" class="nav__link">
                                 <i class='bx bx-briefcase-alt'></i>
                             </a>
                         </li>
@@ -87,9 +87,9 @@
                         <h3 class="home__education">Computer Science & Economics Student <br> @ Dartmouth College</h3>
 
                         <div class="home__buttons">
-                            <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
+                            <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
                                 Resume
-                            </a>
+                            </a> -->
                             <a href="#about" class="button">About me</a>
                         </div>
                     </div>
@@ -142,15 +142,14 @@
                         <p class="about__description">
                             Hi! I'm Annie, and I'm an undergraduate student at Dartmouth College ('25) double majoring in
                             Computer Science and Economics with a minor in Digital Arts.
-                            I'm passionate about the intersection between technology and business- how technology can 
-                            aid and advance our human interactions and lead to a better, more efficient world.
-                            <br>
-                            <br>
+                            I'm passionate about the intersection between technology and business- how technology can aid and advance our human interactions and lead to a better, more efficient world.
+                            <br><br>
+                            Everything I do is centered around being able to use these computational tools to bring good to the world, like using AI and ML to bring indigenous languages into the digital world and use computer graphics to ultimately efficiently visualize how disease travels through fluids to start deveoping solutions without needing to see real-world simulations.
+                            <br><br>
                             I'm currently focused in Artificial Intelligence/Machine Learning, 
                             the UI/UX of webpages, digital animations, and education about these topics. 
                             I also enjoy learning about cybersecurity and participating in CTF challenges.
-                            <br>
-                            <br>
+                            <br><br>
                             When I'm not working, I love playing music, especially piano and flute, and exploring the outdoors.
                         </p>
 
@@ -217,7 +216,7 @@
 
                                     <div>
                                         <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Intermediate</span>
+                                        <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
 
@@ -226,7 +225,7 @@
 
                                     <div>
                                         <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Intermediate</span>
+                                        <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
 
@@ -235,7 +234,7 @@
 
                                     <div>
                                         <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Intermediate</span>
+                                        <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
 
@@ -330,15 +329,6 @@
                                         <span class="skills__level">Intermediate</span>
                                     </div>
                                 </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Chinese</h3>
-                                        <span class="skills__level">Native Speaker</span>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="skills__group">
@@ -347,7 +337,7 @@
 
                                     <div>
                                         <h3 class="skills__name">Cybersecurity</h3>
-                                        <span class="skills__level">Basic</span>
+                                        <span class="skills__level">Intermediate</span>
                                     </div>
                                 </div>
 
@@ -355,7 +345,16 @@
                                     <i class='bx bxs-badge-check' ></i>
 
                                     <div>
-                                        <h3 class="skills__name">Artificial Intelligence / Machine Learning</h3>
+                                        <h3 class="skills__name">Artificial Intelligence</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Machine Learning</h3>
                                         <span class="skills__level">Intermediate</span>
                                     </div>
                                 </div>
@@ -365,7 +364,7 @@
                 </div>
             </section>
 
-            <!--=============== SERVICES ===============-->
+            <!-- =============== SERVICES ===============
             <section class="services section">
                 <span class="section__subtitle">My Services</span>
                 <h2 class="section__title">What I Offer</h2>
@@ -521,12 +520,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
+            <!--=============== PROJECTS (was named WORK) ===============-->
+            <section class="projects section" id="projects">
                 <span class="section__subtitle">What have I worked on?</span>
-                <h2 class="section__title">Recent Works</h2>
+                <h2 class="section__title">Recent Projects</h2>
+
+                <!-- update work filters -->
 
                 <div class="work__filters">
                     <span class="work__item active-work" data-filter='all'>All</span>
@@ -536,10 +537,11 @@
                 </div>
 
                 <div class="work__container container grid">
+                    <!-- Color Sudoku  -->
                     <div class="work__card mix web">
-                        <img src="assets/img/work1.jpg" alt="" class="work__img">
+                        <img src="assets/img/color-sudoku.png" alt="" class="work__img">
 
-                        <h3 class="work__title">Web design</h3>
+                        <h3 class="work__title">Color Sudoku</h3>
 
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
@@ -553,45 +555,61 @@
                             <div class="services__modal-content">
                                 <i class='bx bx-x services__modal-close' ></i>
 
-                                <h3 class="services__modal-title">Product Designer</h3>
+                                <h3 class="services__modal-title">Color Sudoku</h3>
+
                                 <p class="services__modal-description">
-                                    Services with more than 3 years of experience. 
-                                    Providing quality work to clients and companies.
+                                    A fun, interactive spin on the traditional Sudoku puzzle where
+                                    the numbers are colors while the rules remain the same.
+                                    <br><br>
+                                    Color Sudoku is the implemented version you see here. 
+                                    We also created a Classic Sudoku Game that can be played in the console/terminal.
+                                    <br><br>
+                                    Check out the GitHub Project for more details!
                                 </p>
 
                                 <ul class="services__modal-list">
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon'></i>
                                         <p class="services__modal-info">
-                                            I develop the user interface. 
+                                            Color Sudoku + Classic Sudoku game with a creator and solver
                                         </p>
                                     </li>
 
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon'></i>
                                         <p class="services__modal-info">
-                                            I create UX element interactions.
+                                            Collaborated with two teammates and completed in two weeks
                                         </p>
                                     </li>
 
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon'></i>
                                         <p class="services__modal-info">
-                                            I position your company brand.
+                                            Playable on any device
                                         </p>
                                     </li>
 
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon'></i>
                                         <p class="services__modal-info">
-                                            Design and mockups of products for companies. 
+                                            Languages: C, Bash, HTML, CSS, JavaScript
                                         </p>
                                     </li>
+
+                                    <br>
+
+                                    <div class="home__buttons">
+                                        <a href="https://colorsudoku.netlify.app/" target="_blank" class="button">Play Here!</a>
+                                        <a href="https://github.com/annieetang/color-sudoku" target="_blank" class="button">View Project on GitHub</a>
+                                    </div>
+
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
-
+                    <!-- Paper  -->
+                    <!-- maybe also link the paper in the project -->
                     <div class="work__card mix mobile">
                         <img src="assets/img/work2.jpg" alt="" class="work__img">
 
@@ -643,7 +661,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Keyboard  -->
                     <div class="work__card mix design">
                         <img src="assets/img/work3.jpg" alt="" class="work__img">
 
@@ -803,6 +821,14 @@
             </section>
 
             <!--=============== TIMELINE / WORK EXPERIENCE ===============-->
+<!-- !!!!!!!!!!!!!!!!
+use the descriptions to elaborate on how these are important in real world
+going back to what you wrote in the about section, bringing good to the world and advancing our world through these projects.
+
+e.g., keyboard for bringing digital to indigenous languages
+research for the disease travelling through fluids 
+teaching for education for younger generations and teaching them what we know so they can expand it
+!!!!!!!!!!!!!!!! -->
             <section class="timeline section" id="timeline">
                 <div class="timeline__container container">
                     <span class="timeline__subtitle">What have I learned?</span>
@@ -813,9 +839,14 @@
                         <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
-                                <h2>Web Design</h2>
+                                <h3>Summer 2022 - Present</h3>
+                                <h2>
+                                    <a href="https://www.revize.com/" target="_blank">Revize.</a>
+                                </h2>
+                                <h3>The Government Website Experts</h3>
+                                <h3>Troy, MI</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam temporibus doloribus maxime fugiat, molestiae labore, impedit aperiam, ut aut in quasi officiis praesentium. Voluptates numquam adipisci beatae totam ut.
+                                    Returned this summer to intern with Quality Analyst Team and Data Migration Team where I collaborate with clients to redesign and restructure their current government webpages (sitemaps, specifically) through using Microsoft Office tools. I also conduct the first meeting for this phase of the project, and guide them step by step through creating a website layout that is clear, concise, easy to use, and make their vision come to life. Through these bi-weekly meetings with the clients, we discuss how the process is going on either side and resolve any issues. I currently have 14 ongoing projects with clients and am in the middle of developing an algorithm to help digitize a portion of our phase. 
                                 </p>
                             </div>
                         </div>
@@ -823,9 +854,30 @@
                         <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
-                                <h2>Web Development</h2>
+                                <h3>Summer 2022 - Present</h3>
+                                <h2>
+                                    <a href="https://junilearning.com/" target="_blank">Juni Learning</a>
+                                </h2>
+                                <h3>San Francisco, CA (Remote)</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam temporibus doloribus maxime fugiat, molestiae labore, impedit aperiam, ut aut in quasi officiis praesentium. Voluptates numquam adipisci beatae totam ut.
+                                    Working as a computer science instructor for Python and Java, mentoring students from ages 8-17 on computational topics ranging from Introductory Python to Artificial Intelligence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__section">
+                            <div class="bead"></div>
+                            <div class="timeline__content">
+                                <h3>2022</h3>
+                                <h2>
+                                    Computational Linguistics in Indigenous Languages
+                                </h2>
+                                <h3>Hanover, NH</h3>
+                                <p>
+                                    Worked with Assistant Professor Rolando Coto Solano as the lead developer in creating an open-source keyboard with predictive text for Bribri, the indigenous Costa Rican language (see 
+                                    <a href="#projects">Projects</a>). This project is part of a larger study in the Indigenous Languages, specifically the Costa Rican indigenous languages, to increase the computational resources to study these languages and digitize them, so indigenous languages like these will not go dormant.
+                                    <br><br>
+                                    This was created using the <a href="https://keyman.com/developer/" target="_blank">Keyman Developer</a> open-source resources. I also assisted in improving the functionality and UI/UX for the Cabécar and Cook Islands Māori keyboards. I will continue the development of the Bribri keyboard in Fall 2022.
                                 </p>
                             </div>
                         </div>
@@ -833,9 +885,20 @@
                         <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
-                                <h2>FrontEnd</h2>
+                                <h3>Winter 2022 - Present</h3>
+                                <h2>
+                                    <a href="https://cs.dartmouth.edu/~bozhu/index.html" target="_blank">SimpleX Lab</a>
+                                </h2>
+                                <h3>2018-2021</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam temporibus doloribus maxime fugiat, molestiae labore, impedit aperiam, ut aut in quasi officiis praesentium. Voluptates numquam adipisci beatae totam ut.
+                                    As a Women in Science Project first-year undergraduate researcher, I was part of Assistant Professor Bo Zhu's SimpleX team where I research the intersection of computer graphics, computational physics, and scientific machine learning. My main work focused on reproducing the beauty and complexity of fluids through using high-performance and high-fidelity algorithms. 
+                                    <br><br>
+                                    After joining in Winter Term of my first year, I collaborated with five graduate students to publish a SIGGRAPH Technical Paper about the Hydrophobic and Hydrophilic Solid-Fluid Interactions in three months (see 
+
+                                    <a href="#projects">Projects</a>),
+                                    and my main contribution was designing and rendering 12 elastocapillarity models that solve the interfacial physics between liquid, air, and deformable solids by dynamically tracking their contact lines.
+                                    <br><br> 
+                                    I will return in Fall 2022 to continue my work in fluid graphics.
                                 </p>
                             </div>
                         </div>
@@ -843,19 +906,92 @@
                         <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
-                                <h2>BackEnd</h2>
+                                <h3>2021 - Present</h3>
+                                <h2>
+                                    <a href="https://home.dartmouth.edu/" target="_blank">Dartmouth College</a>
+                                </h2>
+                                <h3>Hanover, NH</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam temporibus doloribus maxime fugiat, molestiae labore, impedit aperiam, ut aut in quasi officiis praesentium. Voluptates numquam adipisci beatae totam ut.
+                                    Attending Dartmouth College as the class of 2025, pursuing an undergraduate degree with a double major in Computer Science and Economics.
+                                    <br><br>
+                                    Favorite activities so far: Dartmouth Cybersecurity Club, Dartmouth College Wind Ensemble, Dartmouth Outing Club, Women in Business, Women in Computer Science
                                 </p>
                             </div>
                         </div>
-        
+
                         <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
-                                <h2>SEO Optimized</h2>
+                                <h3>Summer 2021</h3>
+                                <h2>
+                                    <a href="https://www.revize.com/" target="_blank">Revize.</a>
+                                </h2>
+                                <h3>The Government Website Experts</h3>
+                                <h3>Troy, MI</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam temporibus doloribus maxime fugiat, molestiae labore, impedit aperiam, ut aut in quasi officiis praesentium. Voluptates numquam adipisci beatae totam ut.
+                                    I Interned at Revize, a software company focused on developing government websites in the summer of 2021 where I was an intern for the Project Management Team and the Customer Support Team. I monitored the company's support portal and contacted coworkers on any outstanding client-reported issues. I assisted four Project Managers in testing, creating, and designing 28 client webpages and communicated with the clients along the process about upcoming scheduled training meetings.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__section">
+                            <div class="bead"></div>
+                            <div class="timeline__content">
+                                <h3>2020-2021</h3>
+                                <h2>
+                                    <a href="https://www.jropro.com/" target="_blank">J-Ro School of Music</a>
+                                </h2>
+                                <h3>Troy, MI</h3>
+                                <p>
+                                    Worked as a piano instructor and instructed seven children ages 9-16 with piano skills ranging from beginning to advanced, and prepared them for performances in studio-held concerts. 
+                                    <br><br>
+                                    I also assisted in organizing student lesson schedules, monitoring student practce times, and recorded student repertoire. Finally, I assisted the CEO in developing a new friendly annual competition/event for the students to partake and donated over 50 trophies to be prizes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__section">
+                            <div class="bead"></div>
+                            <div class="timeline__content">
+                                <h3>2019-2020</h3>
+                                <h2>
+                                    <a href="https://www.troyceonline.com/" target="_blank">Troy Continuing Education</a>
+                                </h2>
+                                <h3>Troy, MI</h3>
+                                <p>
+                                    Worked as a swim instructor and lifeguard part-time during the school year and full-time during the summers. I led various levels of swim lessons for children, teenagers, and adults and designed the curricula to fulfill each level's requirements. 
+                                    <br><br>
+                                    In addition to teaching, I also assisted in managing the instructors' and lifeguards' shifts, and refactored the existing scheduling system to improve communication between staff, resulting in smoother transitions between classes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__section">
+                            <div class="bead"></div>
+                            <div class="timeline__content">
+                                <h3>2018-2021</h3>
+                                <h2>
+                                    <a href="https://www.friendshipcircle.org/" target="_blank">The Friendship Circle</a>
+                                </h2>
+                                <h3>West Bloomfield Township, MI</h3>
+                                <p>
+                                    From 2018-2021, I volunteered at the Friendship Circle to be buddies with children and people who have Autism Spectrum Disorder. I led, aided, and accompanied individuals and groups to museum field trips, parks and playgrounds, and led weekly crafts and communication-building and bonding activities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__section">
+                            <div class="bead"></div>
+                            <div class="timeline__content">
+                                <h3>2017-2021</h3>
+                                <h2>
+                                    <a href="https://www.troycolts.org/" target="_blank">Troy High School</a>
+                                </h2>
+                                <h3>Troy, MI</h3>
+                                <p>
+                                    Graduated Summa Cum Laude as part of the Class of 2021, with a 4.0/4.0 unweighted GPA and a perfect ACT Score. I was also part of the National Honor Society and received the Presidential Award. 
+                                    <br> <br>
+                                    Favorite activities: Varsity Synchronized Swimming, Troy Colt Marching Band, JV Girls Tennis 
                                 </p>
                             </div>
                         </div>
@@ -994,7 +1130,7 @@
                     </li>
 
                     <li>
-                        <a href="#work" class="footer__link">Projects</a>
+                        <a href="#projects" class="footer__link">Projects</a>
                     </li>
 
                     <li>
