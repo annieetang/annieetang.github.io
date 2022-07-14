@@ -26,6 +26,7 @@
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --first-color-dark: hsl(263, 80%, 50%);
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
@@ -751,6 +752,14 @@ body.light-theme{
   min-height: 150px;
 }
 
+.hyperlinks{
+  color: var(--first-color);
+}
+
+.hyperlinks:hover{
+  color: var(--first-color-dark);
+}
+
 .line{
   position: absolute; 
   z-index: 2;
@@ -1200,7 +1209,7 @@ body.light-theme{
   }
 
   .skills__container{
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(2, 450px);
     justify-content: center;
     column-gap: 3rem;
   }
@@ -1214,6 +1223,7 @@ body.light-theme{
   }
 
   .work__container{
+    grid-template-columns: repeat(3, max-content);
     gap: 3rem;
   }
   .work__card{
