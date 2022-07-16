@@ -4,10 +4,10 @@
 
 Welcome to my website and thanks for taking a look! It means a lot to me :)
 
-### Wonderful sources
+### Sources I'm indebted to
 
-* Bedimcode (for Website template to start from)
-* Online web ustaad (for Timeline)
+* Bedimcode (for initial Website template)
+* Online web ustaad (for Timeline template)
 * [Icons](https://boxicons.com/)
 * [Fonts](https://fonts.google.com/)
 * [Mixitup](https://www.kunkalabs.com/mixitup/)

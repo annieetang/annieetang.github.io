@@ -462,7 +462,7 @@ body.light-theme{
 }
 
 .about__img{
-  width: 220px; 
+  width: 720px; 
   border-radius: 1.5rem; 
   justify-self: center;
 }
@@ -1195,7 +1195,7 @@ body.light-theme{
     column-gap: 2rem;
   }
   .about__img{
-    width: 350px;
+    width: 880px;
   }
   .about__data{
     text-align: initial;
