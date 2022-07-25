@@ -85,7 +85,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-    
+
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
 
@@ -149,3 +149,19 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 200})
 sr.reveal(`.home__social, .home__scroll`, {delay: 200, origin: 'bottom'})
+
+/*=============== COLLAPSIBLE TIMELINE ===============*/
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
