@@ -406,7 +406,7 @@ body.light-theme{
 }
 
 .home__social{
-  bottom: 35rem; 
+  bottom: 20rem; 
   left: 0; 
   display: grid;
   row-gap: .5rem; 
@@ -439,7 +439,7 @@ body.light-theme{
 .home__scroll{
   color: var(--first-color);
   right: -1.5rem; 
-  bottom: 35rem; 
+  bottom: 20rem; 
   display: grid; 
   row-gap: 2.25rem; 
   justify-items: center; 
@@ -1142,6 +1142,12 @@ body.light-theme{
   }
   .home__img{
     width: 530px;
+  }
+  .home__social{
+    bottom: 15rem;
+  }
+  .home__scroll{
+    bottom: 15rem;
   }
 
   .about__info{
