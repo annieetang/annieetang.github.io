@@ -84,7 +84,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
@@ -93,13 +93,16 @@ const scrollActive = () =>{
 		const sectionHeight = current.offsetHeight,
 			  sectionTop = current.offsetTop - 58,
 			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']'),
+              sectionsClass1 = document.querySelector('.topnav a[href*=' + sectionId + ']')
 
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
 			sectionsClass.classList.add('active-link')
+            sectionsClass1.classList.add('topnav-active')
 		}
         else{
 			sectionsClass.classList.remove('active-link')
+			sectionsClass1.classList.remove('topnav-active')
 		}                                                    
 	})
 }

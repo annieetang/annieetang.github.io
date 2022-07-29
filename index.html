@@ -23,7 +23,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title> Annie Tang | Portfolio </title>
+        <title> Annie Tang </title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -31,7 +31,31 @@
             <nav class="nav container">
                 <a href="#" class="nav__logo">Annie</a>
 
-                <!-- nav menu  -->
+                <!-- top nav bar -->
+                <div class="topnav">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#home" class="topnav-links topnav-active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="topnav-links">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="topnav-links">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="topnav-links">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#timeline" class="topnav-links">Timeline</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="topnav-links">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- bottom nav menu  -->
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -72,7 +96,6 @@
                     </ul>
                 </div>
                 
-<!-- BELOW: add text near it that says click me! -->
                 <!-- Theme change button -->
                 <i class='bx bx-moon change-theme' id="theme-button"></i>
             </nav>
@@ -82,39 +105,51 @@
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                <div class="home__container container grid"> 
-                    <div class="home__data">
-                        <span class="home__greeting">Hello! I'm</span>
-                        <h1 class="home__name">Annie Tang</h1>
-                        <h3 class="home__education">Computer Science & Economics Student <br> @ Dartmouth College</h3>
+                <div class="bg"> 
+                    <div class="home__container container grid"> 
+                        <div class="home__data">
+                            <br>
+                            <span class="home__greeting">Hello! I'm</span>
+                            <h1 class="home__name">Annie Tang</h1>
+                            <h3 class="home__education">Computer Science & Economics Student <br> @ Dartmouth College</h3>
 
-                        <div class="home__buttons">
-                            <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
-                                Resume
-                            </a> -->
-                            <a href="#about" class="button">About me</a>
+                            <div class="home__buttons">
+                                <!-- <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
+                                    Resume
+                                </a> -->
+                                <a href="#about" class="button">About me</a>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- <div class="home__handle">
 
-                        <img src="assets/img/IMG_2722_1.jpeg" alt="" class="home__img">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- TODO: picture :)  -->
+                        <!-- <div class="home__handle">
+
+                            <img src="assets/img/IMG_2722_1.jpeg" alt="" class="home__img">
+                        </div> -->
+
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/annietang25/" target="_blank" class="home__social-link">
+                                <i class='bx bxl-linkedin-square' ></i>
+                            </a>
+
+                            <a href="https://github.com/annieetang" target="_blank" class="home__social-link">
+                                <i class='bx bxl-github' ></i>
+                            </a>
+                        </div>
+
+                        <a href="#about" class="home__scroll">
+                            <i class='bx bx-mouse home_scroll-icon'></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                        </a>
+                    </div>
+
+ <!-- TODO: finish click me button next to theme changer  -->
+                    <!-- <div class="theme__content">
+                        <p>
+                            click me~
+                        </p>
                     </div> -->
-
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/annietang25/" target="_blank" class="home__social-link">
-                            <i class='bx bxl-linkedin-square' ></i>
-                        </a>
-
-                        <a href="https://github.com/annieetang" target="_blank" class="home__social-link">
-                            <i class='bx bxl-github' ></i>
-                        </a>
-                    </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-mouse home_scroll-icon'></i>
-                        <span class="home__scroll-name">Scroll Down</span>
-                    </a>
                 </div>
             </section>
             
@@ -1127,7 +1162,7 @@
                         </div>
 
                         <!-- J-Ro  -->
-                        <div class="timeline__section">
+                        <!-- <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
                                 <button type="button" class="collapsible">
@@ -1147,10 +1182,10 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- TCE  -->
-                        <div class="timeline__section">
+                        <!-- <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
                                 <button type="button" class="collapsible">
@@ -1170,10 +1205,10 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- FC  -->
-                        <div class="timeline__section">
+                        <!-- <div class="timeline__section">
                             <div class="bead"></div>
                             <div class="timeline__content">
                                 <button type="button" class="collapsible">
@@ -1191,7 +1226,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Troy High Education  -->
                         <div class="timeline__section">
