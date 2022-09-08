@@ -150,8 +150,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, {delay: 200})
-sr.reveal(`.home__social, .home__scroll`, {delay: 200, origin: 'bottom'})
+sr.reveal(`.home__img`, {delay: 200, origin: 'bottom'})
+sr.reveal(`.home__social, .home__email`, {delay: 200, origin: 'bottom'})
 
 /*=============== COLLAPSIBLE TIMELINE ===============*/
 var coll = document.getElementsByClassName("collapsible");

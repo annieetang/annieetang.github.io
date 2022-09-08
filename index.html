@@ -22,8 +22,9 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/success.css">
 
-        <title> Annie Tang </title>
+        <title> Annie Tang</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -55,7 +56,7 @@
                     </ul>
                 </div>
 
-                <!-- bottom nav menu  -->
+                <!-- bottom nav menu -->
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -97,7 +98,10 @@
                 </div>
                 
                 <!-- Theme change button -->
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                <div class="theme-tooltip">
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    <span class="theme-tooltip-text">Light/Dark</span>
+                </div>
             </nav>
         </header>
 
@@ -119,7 +123,7 @@
                                 <a href="#about" class="button">About me</a>
                             </div>
                         </div>
-                        <!-- <div class="home__handle"> -->
+                        <!-- eventually fix this photo :( -->
                         <img src="assets/img/about_pic.jpeg" alt="" class="home__img">
                         <!-- </div> -->
 
@@ -132,18 +136,10 @@
                                 <i class='bx bxl-github' ></i>
                             </a>
                         </div>
-                        <a href="#about" class="home__scroll">
-                            <i class='bx bx-mouse home_scroll-icon'></i>
-                            <span class="home__scroll-name">Scroll Down</span>
+                        <a href="mailto:annie.tang.25@dartmouth.edu" class="home__email">
+                            <span class="home__email-name">annie.tang.25@dartmouth.edu</span>
                         </a>
                     </div>
-
- <!-- TODO: maybe have a click me button next to theme changer  -->
-                    <!-- <div class="theme__content">
-                        <p>
-                            click me~
-                        </p>
-                    </div> -->
                 </div>
             </section>
             

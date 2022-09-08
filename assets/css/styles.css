@@ -127,11 +127,42 @@ img {
   font-size: 1.25rem;
   cursor: pointer;
   transition: .3s; 
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .change-theme:hover{
   color: var(--first-color);
+}
+
+/* Tooltip container */
+.theme-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.theme-tooltip .theme-tooltip-text {
+  visibility: hidden;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  
+  padding: 5px 0;
+  border-radius: 0.5rem;
+ 
+  position: absolute;
+  z-index: 1;
+
+  width: 100px;
+  top: 100%;
+  left: 50%;
+  margin-left: -75px; 
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.theme-tooltip:hover .theme-tooltip-text {
+  visibility: visible;
 }
 
 /*========== Variables Light theme ==========*/
@@ -139,28 +170,27 @@ body.light-theme{
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
-  --container-color: #fff;
+  --container-color: white;
 }
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.light-theme .bg{
-  /* purple clouds */
+
+/* .light-theme .bg{
   background-image: url('/assets/img/rodion-kutsaev-8P-uQaTd8rw-unsplash.jpg');
-}
+} */
 
 .light-theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
-.light-theme .nav__menu
-.light-theme .topnav{
+.light-theme .nav__menu{
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 
-.light-theme .section__subtitle
+.light-theme .section__subtitle,
 .light-theme .timeline__subtitle{
   color: var(--text-color);
 }
@@ -169,13 +199,14 @@ body.light-theme{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
-.light-theme .home__social::after, 
+.light-theme .home__social::after,
+.light-theme .home__email::after,
 .light-theme .footer__social-link{
   background-color: var(--title-color);
 }
 
 .light-theme .home__social-link,
-.light-theme .home__scroll,
+.light-theme .home__email,
 .light-theme .button, 
 .light-theme .button:hover, 
 .light-theme .active-work, 
@@ -276,7 +307,7 @@ body.light-theme{
   color: var(--first-color);
   font-weight: var(--font-medium);
   transition: .4s;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .nav__logo:hover{
@@ -286,6 +317,7 @@ body.light-theme{
 .nav__menu{
   position: fixed;
   bottom: 1rem; 
+  opacity: 0.9;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
   width: 90%;
   border-radius: 4rem;
@@ -342,7 +374,7 @@ body.light-theme{
 
 /*=============== HOME ===============*/
 .bg{
-  background-image: url('/assets/img/lucas-myers-xCTAd2NN4I0-unsplash.jpeg');
+  /* background-image: url('/assets/img/lucas-myers-xCTAd2NN4I0-unsplash.jpeg'); */
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px -8px 10px 0px var(--body-color) inset;
@@ -381,14 +413,13 @@ body.light-theme{
   font-size: var(--biggest-font-size);
 }
 
-/* scale photo, same with border behind it */
 .home__img{
   border-radius: 1.5rem; 
   justify-self: center;
   width: 560px;
   height: auto;
   display: flex;
-  box-shadow: 0 0 8px 5px var(--body-color);
+  box-shadow: 0 0 8px 15px var(--body-color) inset;
 }
 
 .home__buttons{
@@ -398,15 +429,10 @@ body.light-theme{
   gap: 1.5rem;
 }
 
-.home__social, 
-.home__scroll{
-  margin-right: 1rem;
-  margin-left: 1rem;
-  position: absolute;
-}
-
 .home__social{
-  bottom: 20rem; 
+  margin-left: 3rem;
+  position: fixed;
+  bottom: 5rem;
   left: 0; 
   display: grid;
   row-gap: .5rem; 
@@ -424,42 +450,33 @@ body.light-theme{
 }
 
 .home__social-link:hover{
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: #fff;
 }
 
-.home__social::after{
-  content: '';
-  width: 32px;
-  height: 2px; 
-  background-color: var(--first-color); 
-  transform: rotate(90deg) translate(16px, 3px);
-}
-
-.home__scroll{
-  color: var(--first-color);
-  right: -1.5rem; 
-  bottom: 20rem; 
+.home__email{
+  /* margin-right: 1rem; */
+  position: fixed;
+  bottom: 9rem;
+  color: var(--first-color-alt);
+  right: -2.5rem; 
   display: grid; 
   row-gap: 2.25rem; 
   justify-items: center; 
 }
 
-.home__scroll-icon{
-  font-size: 1.25rem; 
-}
-
-.home__scroll-name{
+.home__email-name{
   font-size: var(--smaller-font-size);
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
-.theme__content{
-  color: var(--text-color);
-  bottom: 12rem; 
-  left: 0; 
-  display: grid;
-  row-gap: .5rem; 
+.home__social::after,
+.home__email::after{
+  content: '';
+  width: 32px;
+  height: 2px; 
+  background-color: var(--first-color-alt); 
+  transform: rotate(90deg) translate(80px, 1px);
 }
 
 /*=============== BUTTONS ===============*/
@@ -1128,7 +1145,7 @@ body.light-theme{
 }
 
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 560px){
   .nav__menu{
     padding: 1rem 1.5rem;
   }
@@ -1136,18 +1153,14 @@ body.light-theme{
   .home__button{
     flex-direction: column;
   }
-  .home__handle{
-    width: 200px; 
-    height: 150px;
-  }
   .home__img{
     width: 530px;
   }
   .home__social{
-    bottom: 15rem;
+    display: none;
   }
-  .home__scroll{
-    bottom: 15rem;
+  .home__email{
+    display: none;
   }
 
   .about__info{
@@ -1175,7 +1188,7 @@ body.light-theme{
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px){
+@media screen and (min-width: 612px){
   .nav__menu{
     width: 328px;
     left: 0;
@@ -1257,10 +1270,6 @@ body.light-theme{
     height: calc(var(--header-height) + 1rem);
   }
 
-  /* .home__handle{
-    width: 600px;
-    height: 450px;
-  } */
   .home__img{
     width: 720px;
   }
@@ -1271,7 +1280,7 @@ body.light-theme{
   .home__social::after{
     transform: rotate(90deg) translate(16px, 0);
   }
-  .home__scroll-icon{
+  .home__email-icon{
     font-size: 2rem;
   }
 
@@ -1342,27 +1351,4 @@ body.light-theme{
     padding: .4rem;
     border-radius: .5rem;
   }
-}
-
-/*=============== FORM SUCCESS PAGE ===============*/
-.success__container{
-  row-gap: 2rem; 
-  padding-top: 1rem; 
-  margin-left: 5rem;
-  margin-right: 5rem;
-  align-items: center;
-}
-
-.success__content{
-  padding: 1.5rem; 
-  border-radius: 1.25rem; 
-  margin-bottom: 2rem; 
-  text-align: center;
-}
-
-.success__button{
-  margin-top: 5rem;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
 }
