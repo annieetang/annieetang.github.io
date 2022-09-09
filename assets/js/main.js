@@ -131,6 +131,7 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
+    console.log(themeButton)
     // Add or remove the light / icon theme
     document.body.classList.toggle(lightTheme)
     themeButton.classList.toggle(iconTheme)
