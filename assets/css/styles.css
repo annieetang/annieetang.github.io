@@ -708,7 +708,19 @@ body.light-theme{
   visibility: visible;
 }
 
-/*=============== WORK ===============*/
+/*=============== WORK / PUBLICATIONS ===============*/
+
+.publications{
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.publication__card{
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
 .work__container{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -770,6 +782,7 @@ body.light-theme{
   background-color: var(--first-color);
   color: var(--body-color);
 }
+
 /*=============== TIMELINE / WORK EXPERIENCE ===============*/
 .timeline__title{
   font-size: var(--h2-font-size);
@@ -1304,7 +1317,7 @@ body.light-theme{
     padding: 1rem 1.25rem;
   }
   .about__description{
-    padding: 0 4rem 0 0;
+    padding: 0 6.5rem 0 0;
     margin-bottom: 2.5rem;
   }
 
