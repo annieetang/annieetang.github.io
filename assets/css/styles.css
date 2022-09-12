@@ -216,6 +216,10 @@ body.light-theme{
   color: var(--title-color);
 }
 
+.light-theme .modal{
+  background-color: rgba(255, 255, 255, 0.9); /* black w/ opacity backdrop color */
+}
+
 .light-theme .line,
 .light-theme .bead,
 .light-theme .line:before, 
@@ -716,7 +720,7 @@ body.light-theme{
 }
 
 .publication__card{
-  padding: 1rem;
+  padding: 1rem 5rem;
   border-radius: 1rem;
   text-align: center;
 }
@@ -781,6 +785,81 @@ body.light-theme{
 .active-work{
   background-color: var(--first-color);
   color: var(--body-color);
+}
+
+/* modal images */
+#work__modal__imgs{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#work__modal__imgs:hover{
+  opacity: 0.7;
+}
+
+.modal{
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1; /* sit on top */
+  padding-top: 100px; 
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--body-color); /* fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* black w/ opacity backdrop color */
+}
+
+.modal-content{
+  align-items: center;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+#caption{
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: var(--text-color);
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 70px;
+  right: 300px;
+  color: var(--text-color);
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*=============== TIMELINE / WORK EXPERIENCE ===============*/
@@ -1199,10 +1278,16 @@ body.light-theme{
   .work__filters{
     column-gap: .25rem;
   }
+  .modal-content{
+    width: 90%;
+  }
+  .close{
+    right: 10px;
+  }
 }
 
 /* For medium devices */
-@media screen and (min-width: 612px){
+@media screen and (min-width: 561px){
   .nav__menu{
     width: 328px;
     left: 0;
@@ -1241,7 +1326,14 @@ body.light-theme{
     justify-content: center;
   }
   .work__img{
-    width: 295px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .modal-content{
+    width: 90%;
+  }
+  .close{
+    right: 10px;
   }
 
   .contact__info{
@@ -1252,6 +1344,7 @@ body.light-theme{
     width: 360px;
     margin: 0 auto;
   }
+  
 }
 
 @media screen and (min-width: 767px) {
@@ -1263,6 +1356,10 @@ body.light-theme{
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .close{
+    right: 100px;
   }
 }
 
